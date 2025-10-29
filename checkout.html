@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ElectroShop</h1>
+        <p>Your ultimate destination for electric devices</p>
+    </header>
+    <nav>
+	  <a href="login.html">Login</a>
+       <a href="home1.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+    <main>
+        <h2>Checkout</h2>
+        <h3>Shipping Information</h3>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="zip">Pin Code:</label>
+            <input type="text" id="zip" name="zip" required>
+        </form>
+        
+        <h3>Payment Method</h3>
+<form action="#" method="post">
+
+  <!-- UPI Payment Option -->
+  <label for="upi-id">UPI ID:</label>
+  <input type="text" id="upi-id" name="upi-id" placeholder="example@upi" required>
+  <p>Note: You will receive a payment request on your UPI app (PhonePe, Google Pay, Paytm).</p>
+
+  <hr>
+
+  <!-- Cash on Delivery Option -->
+  <label>
+    <input type="checkbox" name="cod" value="yes">
+    Cash on Delivery (COD)
+  </label>
+  <p>Note: Pay in cash when your order is delivered.</p>
+
+  <hr>
+
+  <button type="submit">Complete Purchase</button>
+</form>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 ElectroShop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
